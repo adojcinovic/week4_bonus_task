@@ -201,6 +201,7 @@ body {
     }
     .left {
         text-align: center;
+        width: 100%;
         max-width: 327px;
         margin-left: 24px;
         margin-right: 24px;
