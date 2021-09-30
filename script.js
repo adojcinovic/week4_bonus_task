@@ -1,10 +1,10 @@
 const inputs = document.querySelectorAll('.input')
 const button = document.querySelector('button')
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const email = document.querySelector('.email')
 
 function checkEmail() {
-    const email = document.getElementById('email')
-    emailRegex.test(email.value) ? null : email.classList.add('input_error')
+    emailRegex.test(email.firstElementChild.value) ? null : email.classList.add('show')
     email.placeholder = 'example@quantox.com'
 }
 

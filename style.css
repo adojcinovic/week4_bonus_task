@@ -163,6 +163,19 @@ body {
             color: var(--redish);
             display: none;
         }
+        .email {
+            width: 100%;
+        }
+        .email div {
+            text-align: end;
+            margin-bottom: 19px;
+            font-size: 11px;
+            line-height: 17px;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--redish);
+            display: none;
+        }
         .show input {
             padding: 15px 32px;
             width: 100%;
