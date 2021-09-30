@@ -5,6 +5,7 @@ const email = document.querySelector('.email')
 
 function checkEmail() {
     if (emailRegex.test(email.firstElementChild.value)) {
+        email.classList.remove('show')
         email.classList.add('email')
     } else {
         email.classList.add('show')
@@ -16,10 +17,10 @@ function checkEmail() {
 function checkInputs() {
     inputs.forEach((input) => {
         input.firstElementChild.value.length === 0 ? input.classList.add('show') : input.classList.remove('show')
-        checkEmail()
     })
 }
 
 button.addEventListener('click', () => {
+    checkEmail()
     checkInputs()
 })
