@@ -109,6 +109,8 @@ body {
             border: none;
             padding: 15px 0 15px 0;
             letter-spacing: 1px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         
         .terms {
