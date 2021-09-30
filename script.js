@@ -16,7 +16,12 @@ function checkEmail() {
 
 function checkInputs() {
     inputs.forEach((input) => {
-        input.firstElementChild.value.length === 0 ? input.classList.add('show') : input.classList.remove('show')
+        if (input.firstElementChild.value.length === 0) {
+            input.classList.add('show')
+            input.firstElementChild.placeholder = ''
+        } else {
+            input.classList.remove('show')
+        }
     })
 }
 
