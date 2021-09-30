@@ -221,8 +221,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 68px;
-        margin-top: 88px;
+        margin-bottom: 44px;
+        margin-top: 64px;
+        padding: 24px;
     }
     .left {
         text-align: center;
@@ -248,7 +249,7 @@ body {
     max-width: 327px;
     }
         .top {
-            padding: 18px 67px;
+            padding: 18px 54px;
             font-size: 15px;
             line-height: 26px;
             font-weight: 400;
