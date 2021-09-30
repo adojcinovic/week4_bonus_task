@@ -5,7 +5,8 @@ const email = document.querySelector('.email')
 
 function checkEmail() {
     emailRegex.test(email.firstElementChild.value) ? null : email.classList.add('show')
-    email.placeholder = 'example@quantox.com'
+    email.firstElementChild.value = ''
+    email.firstElementChild.placeholder = 'example@quantox.com'
 }
 
 function checkInputs() {
