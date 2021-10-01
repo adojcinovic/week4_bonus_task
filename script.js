@@ -25,6 +25,7 @@ function checkInputs() {
     })
 }
 
+
 button.addEventListener('click', () => {
     checkEmail()
     checkInputs()
