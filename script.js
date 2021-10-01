@@ -25,7 +25,18 @@ function checkInputs() {
     })
 }
 
+
 button.addEventListener('click', () => {
     checkEmail()
     checkInputs()
+})
+
+inputs.forEach((input) => {
+    input.firstElementChild.addEventListener('blur', () => {
+        input.firstElementChild.value ? input.classList.remove('show') : null
+    })
+})
+email.firstElementChild.addEventListener('blur', () => {
+    emailRegex.test(email.firstElementChild.value) ? email.classList.remove('show') : null
+    console.log(email);
 })
